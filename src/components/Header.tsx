@@ -19,9 +19,6 @@ const Header = () => {
         setOpen(newOpen);
     };
 
-    const closeDrawer = () => {
-        setOpen(false);
-    }
 
 
     return (

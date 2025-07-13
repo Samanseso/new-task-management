@@ -1,13 +1,13 @@
 import { 
     Avatar, 
-    backdropClasses, 
     Stack,
     Typography,
 } from '@mui/material'
 
 import avatarImg from "../../src/assets/avatar/avatar1.jpg"
 
-const TaskAssignee = ({ assignee } : any) => {
+const TaskAssignee = () => {
+	
 	return (
 		<Stack gap={0.5} sx={{ backgroundColor: "#e6e8fa", p: 0.7, pr: 1.2, borderRadius: 100}}>
 			<Stack direction="row" gap={1} sx={{ alignItems: "center"}}>
