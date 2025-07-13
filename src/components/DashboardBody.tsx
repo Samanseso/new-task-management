@@ -3,7 +3,7 @@ import DashboardProjectsChart from "./DashboardProjectsChart";
 import DashboardTasksChart from "./DashboardTasksChart";
 import DashboardCompletedTasksChart from "./DashboardCompletedTasksChart";
 import DashboardOverDueTasksChart from "./DashboardOverDueTasksChart";
-import DashboardEmployeeChart from "./DashBoardEmployeeChart";
+import DashboardEmployeeChart from "./DashboardEmployeeChart";
 
 const DashboardBody = () => {
     return (
