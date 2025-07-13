@@ -5,6 +5,7 @@ import DashboardCompletedTasksChart from "./DashboardCompletedTasksChart";
 import DashboardOverDueTasksChart from "./DashboardOverDueTasksChart";
 import DashboardEmployee from "./DashboardEmployee";
 
+import DashboardEmployeeChart from "./DashboardEmployeeChart";
 
 const DashboardBody = () => {
     return (
