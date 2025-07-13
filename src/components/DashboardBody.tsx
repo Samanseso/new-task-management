@@ -2,8 +2,8 @@ import { Box, Grid } from "@mui/material";
 import DashboardProjectsChart from "./DashboardProjectsChart";
 import DashboardTasksChart from "./DashboardTasksChart";
 import DashboardCompletedTasksChart from "./DashboardCompletedTasksChart";
-import DashboardEmployeeChart from "./DashBoardEmployeeChart";
 import DashboardOverDueTasksChart from "./DashboardOverDueTasksChart";
+import DashboardEmployeeChart from "./DashBoardEmployeeChart";
 
 const DashboardBody = () => {
     return (
