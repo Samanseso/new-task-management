@@ -3,7 +3,8 @@ import DashboardProjectsChart from "./DashboardProjectsChart";
 import DashboardTasksChart from "./DashboardTasksChart";
 import DashboardCompletedTasksChart from "./DashboardCompletedTasksChart";
 import DashboardOverDueTasksChart from "./DashboardOverDueTasksChart";
-import DashboardEmployeeChart from "./DashBoardEmployeeChart";
+import DashboardEmployee from "./DashboardEmployee";
+
 
 const DashboardBody = () => {
     return (
@@ -16,7 +17,7 @@ const DashboardBody = () => {
                     <DashboardOverDueTasksChart />
                 </Grid>
                 <Grid size={4}>
-                    <DashboardEmployeeChart />
+                    <DashboardEmployee />
                 </Grid>
             </Grid>
 
