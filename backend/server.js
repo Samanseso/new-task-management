@@ -12,7 +12,7 @@ dbConnect();
 
 const PORT = process.env.PORT;
 
-const allowedOrigins = ['https://eclectic-conkies-c73a3e.netlify.app'];
+const allowedOrigins = ['hptts://eclectic-conkies-c73a3e.netlify.app'];
 
 
 const app = express();
@@ -24,7 +24,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: allowedOrigins
+  origin: 'https://eclectic-conkies-c73a3e.netlify.app',
 }));
 
 app.use("/api/v1/users", userRouter);
