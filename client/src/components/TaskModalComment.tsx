@@ -23,13 +23,13 @@ const TaskModalComment = ({ comment, isReplying, replyingTo, doInputReply }: Tas
 	const relativeTimeDifference = getRelativeTimeDifference(comment.createdAt);
 	const [showReplies, setShowReplies] = useState(false);
 
-	console.log(comment)
+	
 
 	return (
 		<Box>
 			<Stack direction="row" gap={1} sx={{ alignItems: "center", mb: 1 }}>
 				<Avatar src={avatarImg} sx={{ width: 30, height: 30 }} />
-				<Typography variant='body2'>{comment.createdBy.name}</Typography>
+				<Typography variant='body2'>{comment.createdBy?.name ?? "Test"}</Typography>
 				<Typography variant='h6' sx={{ fontWeight: "bold"}}>&middot;</Typography>	
 				<Typography variant='body2'>{relativeTimeDifference}</Typography>	
 			</Stack>

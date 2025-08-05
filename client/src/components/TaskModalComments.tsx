@@ -95,6 +95,7 @@ const TaskModalComments = () => {
 		else {
 			await addComment(task._id, values)
 			.then(response => {
+				console.log(response)
 				setComments(response.sort((a, b) => 
     				new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
 				));

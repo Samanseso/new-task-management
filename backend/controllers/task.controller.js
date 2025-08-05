@@ -317,8 +317,6 @@ export const updateComments = async (req, res) => {
 
         const newComment = req.body;
 
-        console.log(req.body)
-
         const result = await Task.findOneAndUpdate(
             { _id: id },
             { $push: { comments: newComment } },

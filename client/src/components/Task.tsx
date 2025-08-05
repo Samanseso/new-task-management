@@ -113,7 +113,7 @@ const Task = ({ task, view } : TaskProps) => {
 						<Typography variant="body2" sx={{ textWrap: "nowrap" }}>{dueDate}</Typography>
 					</Stack>
 					
-					<Box sx={{ width: "12%" }}>
+					<Box sx={{ width: view == "list" ?  "12%" : "auto" }}>
 						<Assignee users={task.assignedTo} />
 					</Box>
 				</Stack>
