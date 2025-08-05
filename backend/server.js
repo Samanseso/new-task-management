@@ -14,12 +14,14 @@ const PORT = process.env.PORT;
 
 const allowedOrigins = ['https://eclectic-conkies-c73a3e.netlify.app'];
 
+
+const app = express();
+
+
 app.use(cors({
   origin: allowedOrigins,
   credentials: true // if you're using cookies or auth headers
 }));
-
-const app = express();
 
 
 
