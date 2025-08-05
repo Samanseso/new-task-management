@@ -18,15 +18,14 @@ const allowedOrigins = ['https://eclectic-conkies-c73a3e.netlify.app'];
 const app = express();
 
 
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true // if you're using cookies or auth headers
-}));
+
 
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: allowedOrigins
+}));
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/tasks", taskRouter);
